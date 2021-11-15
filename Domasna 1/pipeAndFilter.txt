@@ -1,0 +1,4 @@
+osmfilter bar.xml --keep="amenity=bar" | osmconvert - --all-to-nodes --csv="@id @lon @lat name:en name addr:country addr:city:en addr:street:en opening_hours phone website" --csv-headline --csv-separator="," -o="barDataset.csv"
+
+osmfilter cafe.xml --keep="amenity=cafe" | osmconvert - --all-to-nodes --csv="@id @lon @lat name:en name addr:country addr:city:en addr:street:en opening_hours phone website" --csv-headline --csv-separator="," -o="cafeDataset.csv"
+

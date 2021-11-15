@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.57 93a4d346">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2021-11-13T23:47:28Z"/>
+
+  <node id="445893304" lat="41.9947703" lon="21.4138028">
+    <tag k="addr:city" v="Скопје"/>
+    <tag k="addr:city:en" v="Skopje"/>
+    <tag k="addr:country" v="MK"/>
+    <tag k="addr:housenumber" v="67"/>
+    <tag k="addr:postcode" v="1000"/>
+    <tag k="addr:street" v="Митрополит Теодосиј Гологанов"/>
+    <tag k="addr:street:en" v="Mitroplit Teodosij Gologanov"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="cuisine" v="international"/>
+    <tag k="name" v="нола Бар"/>
+    <tag k="name:en" v="Nola Bar"/>
+    <tag k="opening_hours" v="Mo-Fr 09:00-24:00; Sa,Su 00:00-01:00,09:00-24:00"/>
+    <tag k="outdoor_seating" v="yes"/>
+    <tag k="phone" v="+389 2 2444542"/>
+    <tag k="smoking" v="separated"/>
+    <tag k="website" v="http://hotelimakedonija.com.mk/en/Restaurant/1073/In-Vino-Restaurant"/>
+  </node>
+  <node id="459668824" lat="41.9951019" lon="21.4345059">
+    <tag k="addr:country" v="MK"/>
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="459673413" lat="41.9931627" lon="21.4158549">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="461659998" lat="41.4389263" lon="22.6389577">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Gala Live"/>
+  </node>
+  <node id="478041016" lat="41.4332378" lon="22.0143629">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Kaj Roka"/>
+  </node>
+  <node id="499949059" lat="41.7103160" lon="22.8523511">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Калипсо"/>
+    <tag k="name:en" v="Kalipso"/>
+  </node>
+  <node id="529806829" lat="41.4348833" lon="22.0116649">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Energi's"/>
+  </node>
+  <node id="729704902" lat="41.0488849" lon="20.6340352">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="892589441" lat="41.9932121" lon="21.4417550">
+    <tag k="amenity" v="bar"/>
+    <tag k="wheelchair" v="yes"/>
+  </node>
+  <node id="908273280" lat="42.0001669" lon="21.4369808">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Клуб Капан Ан"/>
+  </node>
+  <node id="1562023466" lat="41.9993401" lon="21.4358564">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Hürrem"/>
+    <tag k="name:en" v="Menada"/>
+    <tag k="wheelchair" v="no"/>
+  </node>
+  <node id="1704390075" lat="41.5127808" lon="20.9637148">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="1704390098" lat="41.5115516" lon="20.9588224">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="1704390099" lat="41.5109362" lon="20.9569364">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="1762411015" lat="42.1345864" lon="21.7197998">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Revolution"/>
+  </node>
+  <node id="1791534876" lat="41.3830948" lon="22.7551220">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="1851476158" lat="41.9910080" lon="21.4469180">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Club Colloseum"/>
+  </node>
+  <node id="1858969938" lat="41.9975241" lon="21.4295352">
+    <tag k="addr:city" v="Cкoпje"/>
+    <tag k="addr:housenumber" v="20"/>
+    <tag k="addr:postcode" v="1000"/>
+    <tag k="addr:street" v="Орце Николов"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="LA MER - Coffe &amp; Wine bar"/>
+    <tag k="opening_hours" v="Su-Th 08:00-24:00; Fr-Sa 09:00-01:00; "/>
+  </node>
+  <node id="1860916286" lat="42.1363910" lon="21.7190616">
+    <tag k="amenity" v="bar"/>
+    <tag k="int_name" v="Klub"/>
+    <tag k="name" v="Клуб"/>
+  </node>
+  <node id="1860916435" lat="42.1366097" lon="21.7174092">
+    <tag k="amenity" v="bar"/>
+    <tag k="int_name" v="Kasapski krug"/>
+    <tag k="name" v="Касапски круг"/>
+  </node>
+  <node id="1902379677" lat="42.0536914" lon="20.6970091">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Café-Bar &quot;SEBAJET&quot;"/>
+    <tag k="wifi" v="free"/>
+  </node>
+  <node id="1902380073" lat="42.0538348" lon="20.6972210">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Café-Bar &quot;CALE&quot;"/>
+    <tag k="wifi" v="yes"/>
+  </node>
+  <node id="1908462026" lat="42.0542590" lon="20.6930631">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="2105747973" lat="42.1636774" lon="20.6186686">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Kafe Xili"/>
+  </node>
+  <node id="2105750459" lat="42.1638365" lon="20.6183358">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Embeltore Cuca e Maleve"/>
+  </node>
+  <node id="2377938090" lat="41.1010587" lon="20.8059198">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Cuba Libre Beach Club"/>
+    <tag k="name:mk" v="Куба либре"/>
+  </node>
+  <node id="2377938236" lat="41.0983462" lon="20.8042407">
+    <tag k="amenity" v="bar"/>
+    <tag k="int_name" v="Ambrosia"/>
+    <tag k="name" v="Амброзија"/>
+  </node>
+  <node id="2377938288" lat="41.0999773" lon="20.8049971">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Kadmo Beach Club"/>
+  </node>
+  <node id="2716195094" lat="42.1355371" lon="21.7265836">
+    <tag k="addr:city" v="Kumanovo"/>
+    <tag k="addr:postcode" v="1300"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Lollipop"/>
+    <tag k="website" v="https://www.facebook.com/clublollipop"/>
+  </node>
+  <node id="2823030396" lat="41.9955386" lon="21.4340509">
+    <tag k="addr:city" v="Cкoпje"/>
+    <tag k="addr:city:en" v="Skopje"/>
+    <tag k="addr:country" v="MK"/>
+    <tag k="addr:housename" v="Gradski Trgovski Centar Skopje"/>
+    <tag k="addr:postcode" v="1000"/>
+    <tag k="addr:street" v="Кеј 13 Ноември"/>
+    <tag k="addr:street:en" v="Kay 13th November"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Етно-бар"/>
+    <tag k="name:en" v="Etno Bar"/>
+    <tag k="operator" v="Etno Bar"/>
+    <tag k="outdoor_seating" v="yes"/>
+    <tag k="smoking" v="outside"/>
+  </node>
+  <node id="2844470521" lat="41.2592741" lon="22.8392431">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="2882119233" lat="41.9799593" lon="21.4755669">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Игротека Be Happy"/>
+  </node>
+  <node id="2882653091" lat="41.9834046" lon="21.4868617">
+    <tag k="addr:housenumber" v="43"/>
+    <tag k="addr:postcode" v="1000"/>
+    <tag k="addr:street" v="Тодор Чангов 41"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="email" v="info@grafikaprint.mk"/>
+    <tag k="name" v="Игротека Вини Пу"/>
+    <tag k="name:en" v="Grafikaprint"/>
+    <tag k="name:mk" v="Графикапринт"/>
+    <tag k="opening_hours" v="Mo-Fr 09:00-18:00"/>
+    <tag k="website" v="http://www.grafikaprint.mm"/>
+  </node>
+  <node id="2882653092" lat="41.9815558" lon="21.4762981">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Игротека Чекорче"/>
+  </node>
+  <node id="2882653097" lat="41.9901685" lon="21.4542682">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Игротека Тиквичка"/>
+  </node>
+  <node id="2882653098" lat="41.9754573" lon="21.4440848">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Игротека Смајли"/>
+  </node>
+  <node id="3101726039" lat="41.9998288" lon="21.4358296">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Rakija Bar"/>
+  </node>
+  <node id="3162794861" lat="41.6327660" lon="22.4558390">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Diamond disco"/>
+  </node>
+  <node id="3215233943" lat="42.2106357" lon="20.7431418">
+    <tag k="addr:city" v="Prizren"/>
+    <tag k="addr:postcode" v="20000"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="changing_table:fee" v="yes"/>
+    <tag k="name" v="Check-Inn Pub"/>
+  </node>
+  <node id="3648714484" lat="42.0062927" lon="21.4273688">
+    <tag k="addr:city" v="Cкoпje"/>
+    <tag k="addr:housenumber" v="бр.4"/>
+    <tag k="addr:postcode" v="1000"/>
+    <tag k="addr:street" v="ул.1732"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Брик бар"/>
+    <tag k="name:en" v="BRICK Bar"/>
+    <tag k="opening_hours" v="09:00-01:00"/>
+  </node>
+  <node id="3695356157" lat="41.9665385" lon="22.7738953">
+    <tag k="addr:city" v="Делчево"/>
+    <tag k="addr:housenumber" v="б.б."/>
+    <tag k="addr:postcode" v="2320"/>
+    <tag k="addr:street" v="Светозар Марковски"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Sky Coffee"/>
+    <tag k="name:en" v="Sky Coffee"/>
+    <tag k="smoking" v="outside"/>
+  </node>
+  <node id="3695356158" lat="41.9669895" lon="22.7757541">
+    <tag k="addr:city" v="Делчево"/>
+    <tag k="addr:postcode" v="2320"/>
+    <tag k="addr:street" v="Н. Ј. Вапцаров"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Apolon"/>
+    <tag k="name:en" v="Apolon"/>
+    <tag k="smoking" v="outside"/>
+  </node>
+  <node id="3695770500" lat="41.9671407" lon="22.7773408">
+    <tag k="addr:city" v="Делчево"/>
+    <tag k="addr:postcode" v="2320"/>
+    <tag k="addr:street" v="бул. Македонија"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Валиум"/>
+    <tag k="name:en" v="Valium Coffee"/>
+    <tag k="smoking" v="outside"/>
+  </node>
+  <node id="3826400426" lat="41.1126013" lon="20.8027449">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Connect"/>
+  </node>
+  <node id="3828431967" lat="41.7175570" lon="21.7833196">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Езе Бар"/>
+    <tag k="name:en" v="Ezze Bar"/>
+  </node>
+  <node id="4089163069" lat="41.2535112" lon="22.7959941">
+    <tag k="addr:city" v="Μουριές"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Small bar"/>
+  </node>
+  <node id="4161488090" lat="41.8881131" lon="22.5103667">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Bife Mal Minhen"/>
+    <tag k="opening_hours" v="24/7"/>
+  </node>
+  <node id="4241463589" lat="42.2165781" lon="20.7436837">
+    <tag k="addr:postcode" v="20000"/>
+    <tag k="addr:street" v="Nijazi Alishani"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="email" v="info@mediumcenter-ks.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Medium Mobile Phone Center"/>
+    <tag k="opening_hours" v="Mo-Sa 07:00-23:00; Su"/>
+    <tag k="phone" v="+38349684500"/>
+    <tag k="website" v="http://www.mediumcenter-ks.com"/>
+  </node>
+  <node id="4275553389" lat="41.1122617" lon="20.7912119">
+    <tag k="amenity" v="bar"/>
+    <tag k="cuisine" v="cake;sandwich;coffee_shop"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Пантелејмп"/>
+    <tag k="name:en" v="Pantelejmon"/>
+  </node>
+  <node id="4281402095" lat="41.0115023" lon="21.3430442">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="4281432989" lat="41.0198474" lon="21.3424348">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="4343449216" lat="42.1375281" lon="21.7041267">
+    <tag k="addr:housenumber" v="25"/>
+    <tag k="addr:postcode" v="1300"/>
+    <tag k="addr:street" v="Србо Томовиќ"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="email" v="musicbar86@gmail.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="adra"/>
+    <tag k="opening_hours" v="Mo-Fr"/>
+    <tag k="phone" v="+38970626464"/>
+    <tag k="website" v="http://www.zamunda.net"/>
+  </node>
+  <node id="4356193698" lat="41.7389273" lon="22.1958272">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Кафе-Бар Марсеј"/>
+  </node>
+  <node id="4358669396" lat="41.9946200" lon="21.4417380">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="samocod"/>
+  </node>
+  <node id="4370680620" lat="42.2287856" lon="21.2574590">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Tropical"/>
+  </node>
+  <node id="4375513890" lat="42.0110921" lon="21.3602983">
+    <tag k="addr:city" v="Скопје"/>
+    <tag k="addr:postcode" v="1000"/>
+    <tag k="addr:street" v="Лука Геров"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="КАМИН КАМА"/>
+    <tag k="name:en" v="Kamin Kama"/>
+    <tag k="name:mk" v="КАМИН КАМА"/>
+    <tag k="opening_hours" v="Mo-Su 10:00-00:00"/>
+  </node>
+  <node id="4386697491" lat="41.9996587" lon="21.4363148">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="tavce gravce"/>
+  </node>
+  <node id="4386763889" lat="41.9999897" lon="21.4367578">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="beer cafe"/>
+  </node>
+  <node id="4408705296" lat="41.7024216" lon="20.7578648">
+    <tag k="amenity" v="bar"/>
+    <tag k="name:de" v="mavrovo bar Longe"/>
+  </node>
+  <node id="4411037107" lat="41.0281914" lon="21.3361237">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Конект"/>
+    <tag k="name:en" v="Connect Cafe Bar"/>
+    <tag k="note" v="not sure if this place exists yet, but definatelly is in the wrong location"/>
+  </node>
+  <node id="4423216789" lat="42.2084562" lon="20.7411072">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="BarAca"/>
+    <tag k="name:sq" v="BarAca"/>
+  </node>
+  <node id="4469858799" lat="41.7932482" lon="20.9080722">
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Loune Bar Fantastica"/>
+    <tag k="opening_hours" v="24/7"/>
+  </node>
+  <node id="4520847999" lat="42.1322787" lon="21.7055087">
+    <tag k="addr:housenumber" v="1300"/>
+    <tag k="addr:postcode" v="1300"/>
+    <tag k="addr:street" v="jna"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="eliba lounge bar"/>
+    <tag k="name:en" v="eliba lounge bar"/>
+    <tag k="name:mk" v="eliba lounge bar"/>
+    <tag k="opening_hours" v="24/7"/>
+  </node>
+  <node id="4523593889" lat="42.1343433" lon="21.7176862">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="city"/>
+    <tag k="name:mk" v="city"/>
+  </node>
+  <node id="4579470894" lat="41.7389458" lon="22.1958775">
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Кафе бар Карма"/>
+    <tag k="name:mk" v="Кафе бар Карма"/>
+  </node>
+  <node id="4602841957" lat="42.1999158" lon="22.3330151">
+    <tag k="amenity" v="bar"/>
+    <tag k="cuisine" v="burger;fish;breakfast;hot_dog;ice_cream;cake;coffee_shop;balkan;chicken;fish_and_chips;diner;barbecue"/>
+    <tag k="internet_access" v="wlan"/>
+  </node>
+  <node id="4696170489" lat="42.2107327" lon="20.7413281">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="koha"/>
+    <tag k="name:sq" v="koha"/>
+  </node>
+  <node id="4710531782" lat="42.0068068" lon="21.4264446">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Bar Reka"/>
+  </node>
+  <node id="4716224490" lat="41.0286733" lon="21.3337145">
+    <tag k="addr:housenumber" v="12"/>
+    <tag k="addr:postcode" v="7000"/>
+    <tag k="addr:street" v="Кирил и Методиј"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Порта Џез"/>
+    <tag k="name:en" v="Porta Jazz"/>
+    <tag k="name:mk" v="Порта Џез"/>
+    <tag k="opening_hours" v="Mo-Sa 08:00-01:00; Su 09:00-01:00"/>
+    <tag k="phone" v="047208033"/>
+  </node>
+  <node id="4718339592" lat="42.2373102" lon="20.7373901">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="4718345490" lat="42.2373018" lon="20.7374982">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="4747621022" lat="42.2086858" lon="20.7393766">
+    <tag k="addr:housenumber" v="17"/>
+    <tag k="addr:postcode" v="20000"/>
+    <tag k="addr:street" v="Pushkataret"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="cuisine" v="chicken;burger;coffee_shop"/>
+    <tag k="email" v="portaprizren@gmail.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Porta Prizren"/>
+    <tag k="name:sq" v="Porta Prizren"/>
+    <tag k="opening_hours" v="Mo-Su 08:00-23:30"/>
+    <tag k="phone" v="+38344120319"/>
+  </node>
+  <node id="4749356380" lat="42.2084350" lon="20.7412723">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Ora"/>
+    <tag k="name:sq" v="Ora"/>
+  </node>
+  <node id="4749356381" lat="42.2085073" lon="20.7412270">
+    <tag k="amenity" v="bar"/>
+    <tag k="level" v="0-1"/>
+    <tag k="name" v="Qarshia"/>
+    <tag k="name:sq" v="Qarshia"/>
+    <tag k="outdoor_seating" v="yes"/>
+    <tag k="toilets" v="yes"/>
+    <tag k="toilets:description" v="there is a single stall unisex toilet upstairs"/>
+    <tag k="toilets:disposal" v="flush"/>
+    <tag k="toilets:unisex" v="yes"/>
+  </node>
+  <node id="4749356382" lat="42.2082038" lon="20.7413811">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Morea"/>
+    <tag k="name:sq" v="Morea"/>
+  </node>
+  <node id="4749356383" lat="42.2081697" lon="20.7415455">
+    <tag k="amenity" v="bar"/>
+    <tag k="name:sq" v="No Name"/>
+  </node>
+  <node id="4792650322" lat="41.9386572" lon="20.9275760">
+    <tag k="addr:street" v="102"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Sinican"/>
+    <tag k="name:mk" v="Sinican"/>
+  </node>
+  <node id="4794044627" lat="42.0023100" lon="21.4235498">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Speakeasy"/>
+  </node>
+  <node id="4825810730" lat="42.2088476" lon="20.7410628">
+    <tag k="amenity" v="bar"/>
+    <tag k="name:hu" v="Török kávé, tea"/>
+  </node>
+  <node id="4880542421" lat="42.2151087" lon="20.7334831">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Caffe Bar Troy"/>
+    <tag k="name:sq" v="Caffe Bar Troy"/>
+  </node>
+  <node id="4881325493" lat="42.0062605" lon="21.4061819">
+    <tag k="amenity" v="bar"/>
+    <tag k="layer" v="-1"/>
+    <tag k="name" v="Minus Eden"/>
+    <tag k="opening_hours" v="Tu-Sa 00:00-04:00"/>
+  </node>
+  <node id="5018493773" lat="41.0000150" lon="22.5803268">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Verano"/>
+  </node>
+  <node id="5033612922" lat="41.8539102" lon="22.4438360">
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name:en" v="Kafe Bar Rio"/>
+  </node>
+  <node id="5062125123" lat="42.2084088" lon="20.7404283">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Shendeti"/>
+    <tag k="name:sq" v="Shendeti"/>
+  </node>
+  <node id="5077399021" lat="41.1133770" lon="20.7996516">
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name:en" v="Shilla"/>
+    <tag k="website" v="https://www.facebook.com/ShillaCoffeeBar/"/>
+  </node>
+  <node id="5110720232" lat="42.0012910" lon="21.4378235">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Syri"/>
+  </node>
+  <node id="5129209624" lat="42.0004422" lon="21.4211669">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Papillon"/>
+  </node>
+  <node id="5160396604" lat="41.9439294" lon="20.8636388">
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Kafe te mullajni"/>
+  </node>
+  <node id="5212686964" lat="42.1376071" lon="20.8050459">
+    <tag k="addr:street" v="Gumence"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Feho Comerc"/>
+  </node>
+  <node id="5212694444" lat="42.1378216" lon="20.8059198">
+    <tag k="addr:street" v="Gumence"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Caffe Nedžo"/>
+  </node>
+  <node id="5218070222" lat="41.9957283" lon="20.9606249">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="5284221297" lat="42.0021654" lon="21.4216722">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Kaldrma"/>
+  </node>
+  <node id="5284221299" lat="42.0022762" lon="21.4217791">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Van Gogh"/>
+  </node>
+  <node id="5303948278" lat="42.0078535" lon="21.3688665">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Hazard Club"/>
+    <tag k="sport" v="cue"/>
+  </node>
+  <node id="5324087246" lat="42.0052280" lon="21.4108010">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Tesla Bar"/>
+  </node>
+  <node id="5339772021" lat="41.9947622" lon="21.4290413">
+    <tag k="addr:postcode" v="1000"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Centar Bar"/>
+    <tag k="opening_hours" v="Mo-Su 09:00-23:00"/>
+  </node>
+  <node id="5402663235" lat="41.9830723" lon="21.4711307">
+    <tag k="addr:postcode" v="1000"/>
+    <tag k="addr:street" v="Булевар Јане Сандански"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="cuisine" v="coffee_shop"/>
+    <tag k="name" v="Coffeelix"/>
+    <tag k="opening_hours" v="Mo-Su 09:00-00:00"/>
+  </node>
+  <node id="5408299422" lat="42.1373364" lon="21.7041570">
+    <tag k="addr:housenumber" v="25"/>
+    <tag k="addr:postcode" v="1300"/>
+    <tag k="addr:street" v="Србо Томовиќ"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="email" v="adrscreen@gmail.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Kumanovo"/>
+    <tag k="name:en" v="English"/>
+    <tag k="opening_hours" v="24/7"/>
+    <tag k="phone" v="+38971611422"/>
+  </node>
+  <node id="5484708477" lat="42.0007066" lon="21.4268797">
+    <tag k="addr:housenumber" v="38"/>
+    <tag k="addr:street" v="Булевар Илинден"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Thirio"/>
+  </node>
+  <node id="5659318796" lat="42.0002331" lon="21.4234510">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Radio bar"/>
+  </node>
+  <node id="5726415819" lat="42.2087088" lon="20.7404049">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Soho"/>
+  </node>
+  <node id="5759414045" lat="41.9937893" lon="21.4661079">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Bar"/>
+  </node>
+  <node id="5807750051" lat="41.9981594" lon="21.4304538">
+    <tag k="amenity" v="bar"/>
+    <tag k="leisure" v="outdoor_seating"/>
+  </node>
+  <node id="5863885686" lat="42.0026460" lon="21.4614608">
+    <tag k="addr:postcode" v="1000"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Ле Петит"/>
+    <tag k="name:en" v="Le Petit"/>
+    <tag k="opening_hours" v="Mo-Su 08:00-01:00"/>
+  </node>
+  <node id="5890928713" lat="41.1080463" lon="20.8066006">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Pardise"/>
+  </node>
+  <node id="5908867785" lat="41.9945181" lon="21.4383755">
+    <tag k="amenity" v="bar"/>
+    <tag k="name:en" v="Old lady beer bar"/>
+  </node>
+  <node id="5909903140" lat="41.0660317" lon="20.6384606">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="5916224569" lat="41.0903871" lon="20.5749461">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="5916225458" lat="41.0657321" lon="20.6089416">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="5916225827" lat="41.0993672" lon="20.5739587">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="5916226130" lat="41.0889816" lon="20.5760601">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="5916226568" lat="41.0892836" lon="20.5757957">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="5916226569" lat="41.0888026" lon="20.5758597">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="6054032910" lat="41.9971537" lon="21.4284187">
+    <tag k="amenity" v="bar"/>
+    <tag k="name:de" v="SQUEEZE ME"/>
+  </node>
+  <node id="6054048706" lat="41.9999118" lon="21.4353545">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="6054049790" lat="41.9965743" lon="21.4188403">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="6079524207" lat="42.0229302" lon="22.5900747">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Hawaii Lounge Bar"/>
+    <tag k="smoking" v="outside"/>
+  </node>
+  <node id="6185560885" lat="41.1742024" lon="20.6798797">
+    <tag k="addr:street" v="Партизанска"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Metropolis"/>
+  </node>
+  <node id="6283315096" lat="42.2089606" lon="20.7409803">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Baileys &quot;OAZA&quot;"/>
+  </node>
+  <node id="6348113868" lat="41.7389133" lon="22.1957776">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Версај"/>
+  </node>
+  <node id="6427002485" lat="41.9951391" lon="21.4216262">
+    <tag k="addr:housenumber" v="34"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name:en" v="Brown Sugar Café &amp; Bar"/>
+  </node>
+  <node id="6466749619" lat="41.9964359" lon="21.4268984">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Mr. Jack"/>
+    <tag k="outdoor_seating" v="yes"/>
+  </node>
+  <node id="6586827385" lat="41.0691510" lon="20.5655165">
+    <tag k="addr:postcode" v="3403"/>
+    <tag k="addr:street" v="Via Egnatia"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="London"/>
+    <tag k="name:en" v="London Coffe"/>
+    <tag k="name:sq" v="London Caffe"/>
+    <tag k="opening_hours" v="24/7"/>
+    <tag k="website" v="https://www.facebook.com/London-Coffe-638659216647850/"/>
+  </node>
+  <node id="6598812862" lat="41.9510601" lon="21.2993568">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Tiamo"/>
+  </node>
+  <node id="6810254485" lat="41.9907645" lon="21.4251713">
+    <tag k="amenity" v="bar"/>
+    <tag k="cuisine" v="buschenschank;international"/>
+    <tag k="name" v="Three Kitchen Bar"/>
+  </node>
+  <node id="6812666808" lat="41.9963385" lon="21.4306474">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Distrikt"/>
+  </node>
+  <node id="6815931385" lat="42.0003785" lon="21.4209912">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Nano"/>
+  </node>
+  <node id="6833100792" lat="41.1175179" lon="20.8015609">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="6920424345" lat="42.2086116" lon="20.7403727">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Zeen"/>
+  </node>
+  <node id="6920488881" lat="42.2083242" lon="20.7394571">
+    <tag k="amenity" v="bar"/>
+    <tag k="level" v="0"/>
+    <tag k="name" v="Te Kinezi"/>
+    <tag k="outdoor_seating" v="yes"/>
+    <tag k="toilets:wheelchair" v="no"/>
+    <tag k="wheelchair" v="no"/>
+  </node>
+  <node id="6920488883" lat="42.2083496" lon="20.7394913">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="princecaffe"/>
+    <tag k="outdoor_seating" v="yes"/>
+    <tag k="wheelchair" v="no"/>
+  </node>
+  <node id="6970147987" lat="41.9944041" lon="21.4296298">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Кафе и сине Котур"/>
+    <tag k="name:en" v="Cafe I cine Kotur"/>
+  </node>
+  <node id="7027075985" lat="41.9907915" lon="21.4250967">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="12-12 “Дванаес Дванаес”"/>
+    <tag k="name:en" v="12-12 “Twelve - Twelve”"/>
+    <tag k="name:mk" v="12-12 “Дванаесет Дванаесет”"/>
+  </node>
+  <node id="7145674630" lat="42.0052205" lon="21.4108493">
+    <tag k="addr:city" v="Cкoпje"/>
+    <tag k="addr:housenumber" v="9"/>
+    <tag k="addr:postcode" v="1000"/>
+    <tag k="addr:street" v="Никола Тесла"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="check_date:opening_hours" v="2021-02-15"/>
+    <tag k="name" v="Marvel Coffee Bar"/>
+    <tag k="opening_hours" v="Mo-Su 08:00-24:00"/>
+    <tag k="phone" v="+38970278287"/>
+  </node>
+  <node id="7423832194" lat="42.1632901" lon="20.6190661">
+    <tag k="addr:city" v="Zhur"/>
+    <tag k="addr:postcode" v="20520"/>
+    <tag k="addr:street" v="Komandant Petriti"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Caffe Aidi"/>
+  </node>
+  <node id="7450248802" lat="42.1626857" lon="20.6189024">
+    <tag k="addr:city" v="Zhur"/>
+    <tag k="addr:postcode" v="20520"/>
+    <tag k="addr:street" v="Kalabria"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Caffe Te Doda"/>
+    <tag k="opening_hours" v="Mo-Su"/>
+  </node>
+  <node id="7458698154" lat="42.1678666" lon="20.6148228">
+    <tag k="addr:city" v="Zhur"/>
+    <tag k="addr:postcode" v="20520"/>
+    <tag k="addr:street" v="Marsi 89"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Caffe Te Hulusi"/>
+  </node>
+  <node id="7504657345" lat="42.1630853" lon="20.6194416">
+    <tag k="addr:city" v="Zhur"/>
+    <tag k="addr:postcode" v="20520"/>
+    <tag k="addr:street" v="Komandant Petriti"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Shisha Bar - Caffe"/>
+  </node>
+  <node id="7504692926" lat="42.1648548" lon="20.6254095">
+    <tag k="addr:city" v="Zhur"/>
+    <tag k="addr:postcode" v="20520"/>
+    <tag k="addr:street" v="Hashim Vezaj"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Caffe Tenda Zhur"/>
+  </node>
+  <node id="7633392885" lat="42.2152568" lon="20.7246320">
+    <tag k="amenity" v="bar"/>
+    <tag k="cuisine" v="crepe"/>
+    <tag k="email" v="info@bigscoop-ks.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Big Scoop Prizren"/>
+    <tag k="opening_hours" v="Mo-Su 08:00-22:00"/>
+    <tag k="phone" v="+38349855353"/>
+    <tag k="website" v="https://www.bigscoop-ks.com/"/>
+  </node>
+  <node id="7714773226" lat="41.5118763" lon="20.9633920">
+    <tag k="addr:city" v="Kicevo"/>
+    <tag k="addr:housenumber" v="6"/>
+    <tag k="addr:postcode" v="6250"/>
+    <tag k="addr:street" v="Александар Македонски"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="brewery" v="yes"/>
+    <tag k="name" v="Institute Club"/>
+    <tag k="opening_hours" v="08:00-01:00"/>
+    <tag k="opening_hours:covid19" v="same"/>
+  </node>
+  <node id="7816659986" lat="42.2088493" lon="20.7389519">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Destill"/>
+  </node>
+  <node id="7822070322" lat="41.9874556" lon="21.4318702">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="by the way"/>
+  </node>
+  <node id="7827848335" lat="42.2301787" lon="21.2563732">
+    <tag k="addr:city" v="Kaçanik"/>
+    <tag k="addr:postcode" v="71000"/>
+    <tag k="addr:street" v="Korza-2"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Pure Organic"/>
+  </node>
+  <node id="8098609617" lat="42.1332230" lon="20.8063955">
+    <tag k="addr:postcode" v="10000"/>
+    <tag k="addr:street" v="Dom"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="cuisine" v="burger;coffee_shop;diner;french;grill;turkish"/>
+    <tag k="email" v="exm_exm@hotmail.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Caffe Nedo"/>
+    <tag k="name:en" v="Caffe nedo"/>
+    <tag k="name:sr" v="CAFFE NEDO"/>
+    <tag k="opening_hours" v="24/7"/>
+  </node>
+  <node id="8579764118" lat="42.2107845" lon="20.7293746">
+    <tag k="addr:housenumber" v="4"/>
+    <tag k="addr:postcode" v="20000"/>
+    <tag k="addr:street" v="Ibrahim Lutfiu"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="email" v="gavazajdreni@gmail.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="PortaL"/>
+  </node>
+  <node id="8582537117" lat="42.2107513" lon="20.7293371">
+    <tag k="addr:housenumber" v="4"/>
+    <tag k="addr:postcode" v="20000"/>
+    <tag k="addr:street" v="Ibrahim Lutfiu"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="email" v="drenigavazaj@hotmail.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="PortaL"/>
+    <tag k="phone" v="+38345215845"/>
+  </node>
+  <node id="8587950062" lat="42.1966531" lon="20.6646110">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="BAR Lugano"/>
+  </node>
+  <node id="8761010417" lat="42.2108146" lon="20.7293132">
+    <tag k="addr:housenumber" v="5"/>
+    <tag k="addr:postcode" v="20000"/>
+    <tag k="addr:street" v="Ibrahim Lutfiu"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="email" v="gavazajdreni@gmail.com"/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="PortaL"/>
+    <tag k="phone" v="+38345215845"/>
+  </node>
+  <node id="8798313700" lat="42.2084892" lon="20.7392383">
+    <tag k="addr:street" v="Pushkatarët P.N"/>
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Panini"/>
+  </node>
+  <node id="8804880456" lat="42.2166231" lon="20.7246132">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Çarshia Shisha Bar"/>
+  </node>
+  <node id="8851860718" lat="41.8432153" lon="22.2962575">
+    <tag k="amenity" v="bar"/>
+  </node>
+  <node id="8917370463" lat="41.0312177" lon="21.3331027">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Радост"/>
+  </node>
+  <node id="8946192917" lat="41.1181619" lon="20.7985290">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Gostilnica Boem"/>
+  </node>
+  <node id="9025111283" lat="41.3678897" lon="21.2484653">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Malaga Lounge Bar"/>
+  </node>
+  <node id="9103439830" lat="42.2082295" lon="20.7405674">
+    <tag k="amenity" v="bar"/>
+    <tag k="name:en" v="Monacco"/>
+  </node>
+  <node id="9200216331" lat="41.1116510" lon="20.8020830">
+    <tag k="amenity" v="bar"/>
+    <tag k="name" v="Octava"/>
+  </node>
+
+</osm>
