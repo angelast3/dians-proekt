@@ -1,4 +1,4 @@
-package finki.ukim.mk.findmyplace.service.interfaces;
+package finki.ukim.mk.findmyplace.service;
 
 import finki.ukim.mk.findmyplace.model.City;
 

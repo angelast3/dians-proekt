@@ -2,7 +2,7 @@ package finki.ukim.mk.findmyplace.service.implementations;
 
 import finki.ukim.mk.findmyplace.model.Ammenity;
 import finki.ukim.mk.findmyplace.repository.AmmenityRepository;
-import finki.ukim.mk.findmyplace.service.interfaces.AmmenityService;
+import finki.ukim.mk.findmyplace.service.AmmenityService;
 
 import java.util.List;
 

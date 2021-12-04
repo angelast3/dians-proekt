@@ -2,7 +2,7 @@ package finki.ukim.mk.findmyplace.service.implementations;
 
 import finki.ukim.mk.findmyplace.model.City;
 import finki.ukim.mk.findmyplace.repository.CityRepository;
-import finki.ukim.mk.findmyplace.service.interfaces.CityService;
+import finki.ukim.mk.findmyplace.service.CityService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
