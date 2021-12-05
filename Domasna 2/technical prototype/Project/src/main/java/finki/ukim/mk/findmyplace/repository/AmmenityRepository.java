@@ -25,7 +25,8 @@ public class AmmenityRepository {
         while((row = barCsvReader.readLine())!= null){
             String []barData = row.split(",");
             if ( flag > 0 ){
-                ammenityList.add(new Ammenity(barData[3], barData[3], Double.parseDouble(barData[1]), Double.parseDouble(barData[2]), "07" + String.format("%07d", random.nextInt(10000000)), "MK", cityRepository.findByName("Skopje").getCityID(), "Partizanska", "09:00-01:00", "", 1));
+                if (!barData[3].isEmpty())
+                    ammenityList.add(new Ammenity(barData[3], barData[3], Double.parseDouble(barData[1]), Double.parseDouble(barData[2]), "07" + String.format("%07d", random.nextInt(10000000)), "MK", cityRepository.findByName("Skopje").getCityID(), "Partizanska", "09:00-01:00", "", 1));
             }
             flag++;
         }
@@ -34,11 +35,16 @@ public class AmmenityRepository {
         while((row = cafeCsvReader.readLine())!= null){
             String []cafeData = row.split(",");
             if (flag > 0){
-                ammenityList.add(new Ammenity(cafeData[3], cafeData[3], Double.parseDouble(cafeData[1]), Double.parseDouble(cafeData[2]),"07" + String.format("%07d", random.nextInt(10000000)), "MK", cityRepository.findByName("Skopje").getCityID(), "Partizanska", "09:00-01:00", "", 0));
+                if(!cafeData[3].isEmpty())
+                    ammenityList.add(new Ammenity(cafeData[3], cafeData[3], Double.parseDouble(cafeData[1]), Double.parseDouble(cafeData[2]),"07" + String.format("%07d", random.nextInt(10000000)), "MK", cityRepository.findByName("Skopje").getCityID(), "Partizanska", "09:00-01:00", "", 0));
             }
             flag++;
         }
 
+    }
+
+    public Optional<Ammenity> findById(Long id){
+        return ammenityList.stream().filter(x -> x.getAmmenityID().equals(id)).findFirst();
     }
 
     public List<Ammenity> listAll(){

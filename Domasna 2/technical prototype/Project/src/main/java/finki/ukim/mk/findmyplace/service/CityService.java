@@ -1,6 +1,7 @@
 package finki.ukim.mk.findmyplace.service;
 
 import finki.ukim.mk.findmyplace.model.City;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
