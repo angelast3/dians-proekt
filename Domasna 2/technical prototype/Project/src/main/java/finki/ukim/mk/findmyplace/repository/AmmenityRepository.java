@@ -13,7 +13,6 @@ import java.util.stream.Collectors;
 @Repository
 public class AmmenityRepository {
     public static List<Ammenity> ammenityList = new ArrayList<>();
-    private final CityRepository cityRepository = new CityRepository();
 
     public AmmenityRepository() throws IOException {
         BufferedReader barCsvReader = new BufferedReader(new FileReader("src/main/java/finki/ukim/mk/findmyplace/repository/barDataset.csv"));
@@ -26,7 +25,7 @@ public class AmmenityRepository {
             String []barData = row.split(",");
             if ( flag > 0 ){
                 if (!barData[3].isEmpty())
-                    ammenityList.add(new Ammenity(barData[3], barData[3], Double.parseDouble(barData[1]), Double.parseDouble(barData[2]), "07" + String.format("%07d", random.nextInt(10000000)), "MK", cityRepository.findByName("Skopje").getCityID(), "Partizanska", "09:00-01:00", "", 1));
+                    ammenityList.add(new Ammenity(barData[3], barData[3], Double.parseDouble(barData[1]), Double.parseDouble(barData[2]), "07" + String.format("%07d", random.nextInt(10000000)), "MK", barData.length >= 6 && !barData[6].equals("") ? barData[6] : null, "Partizanska", "09:00-01:00", "", 1));
             }
             flag++;
         }
@@ -36,7 +35,7 @@ public class AmmenityRepository {
             String []cafeData = row.split(",");
             if (flag > 0){
                 if(!cafeData[3].isEmpty())
-                    ammenityList.add(new Ammenity(cafeData[3], cafeData[3], Double.parseDouble(cafeData[1]), Double.parseDouble(cafeData[2]),"07" + String.format("%07d", random.nextInt(10000000)), "MK", cityRepository.findByName("Skopje").getCityID(), "Partizanska", "09:00-01:00", "", 0));
+                    ammenityList.add(new Ammenity(cafeData[3], cafeData[3], Double.parseDouble(cafeData[1]), Double.parseDouble(cafeData[2]),"07" + String.format("%07d", random.nextInt(10000000)), "MK", cafeData.length >= 6 && !cafeData[6].equals("") ? cafeData[6] : null, "Partizanska", "09:00-01:00", "", 0));
             }
             flag++;
         }
@@ -62,9 +61,9 @@ public class AmmenityRepository {
                 .collect(Collectors.toList());
     }
 
-    public List<Ammenity> listByCity(Long cityID){
+    public List<Ammenity> listByCity(String city){
         return ammenityList.stream()
-                .filter(x->x.getCityID().equals(cityID))
+                .filter(x->x.getCity().equals(city))
                 .collect(Collectors.toList());
     }
 }

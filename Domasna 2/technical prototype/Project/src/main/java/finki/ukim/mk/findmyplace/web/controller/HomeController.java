@@ -25,15 +25,14 @@ public class HomeController {
     @GetMapping
     public String getHomePage(Model model){
         model.addAttribute("amenities", ammenityService.showAll());
+        model.addAttribute("cities", cityService.showAll());
         return "home";
     }
 
     @GetMapping("/details/{id}")
     public String getAmenityDetails(@PathVariable Long id, Model model){
         Ammenity amenity = ammenityService.findById(id);
-        City city = cityService.searchById(amenity.getCityID());
         model.addAttribute("amenity", amenity);
-        model.addAttribute("city", city);
         return "amenity-details";
     }
 

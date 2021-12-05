@@ -53,10 +53,13 @@
 </header>
 <div class="filter-container ">
     <div class="select-filter">
-    <select name="city" >
-        <option name="skopje" value="skopje">Skopje</option>
-        <option name="bitola" value="bitola">Bitola</option>
-        <option name="ohrid" value="ohrid">Ohrid</option>
+        <label for="city">City</label>
+    <select name="city" id="city">
+        <option th:name="all" th:value="all" th:text="All" selected></option>
+        <option th:each="c : ${cities}" th:name="${c.getName()}" th:value="${c.getName()}" th:text="${c.getName()}"></option>
+<!--        <option name="skopje" value="skopje">Skopje</option>-->
+<!--        <option name="bitola" value="bitola">Bitola</option>-->
+<!--        <option name="ohrid" value="ohrid">Ohrid</option>-->
     </select>
     <div class="amenity-type">
         <div class="radio-container">

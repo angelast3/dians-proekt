@@ -35,7 +35,7 @@ public class AmmenityServiceImpl implements AmmenityService {
     }
 
     @Override
-    public List<Ammenity> searchByCity(Long cityID) {
-        return this.ammenityRepository.listByCity(cityID);
+    public List<Ammenity> searchByCity(String city) {
+        return this.ammenityRepository.listByCity(city);
     }
 }

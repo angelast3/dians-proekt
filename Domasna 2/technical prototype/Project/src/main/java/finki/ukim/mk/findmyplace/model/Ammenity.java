@@ -11,13 +11,13 @@ public class Ammenity {
     private String nameEn;
     private String phoneNumber;
     private String country;
-    private Long cityID;
+    private String city;
     private String address;
     private String openingHours;
     private String website;
     private AmmenityType type;
 
-    public Ammenity(String name, String nameEn, Double longitude, Double latitude, String phoneNumber, String country, Long cityID, String address, String openingHours, String website, int typeID) {
+    public Ammenity(String name, String nameEn, Double longitude, Double latitude, String phoneNumber, String country, String city, String address, String openingHours, String website, int typeID) {
         this.ammenityID = (long)(Math.random() * 1000);
         this.longitude = longitude;
         this.latitude = latitude;
@@ -25,7 +25,7 @@ public class Ammenity {
         this.nameEn = nameEn;
         this.phoneNumber = phoneNumber;
         this.country = country;
-        this.cityID = cityID;
+        this.city = city;
         this.address = address;
         this.openingHours = openingHours;
         this.website = website;

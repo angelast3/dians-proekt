@@ -57,7 +57,8 @@
     <h1>Name: <th:block th:text="${amenity.getName()}"></th:block></h1>
     <h1>Phone number: <th:block th:text="${amenity.getPhoneNumber()}"></th:block></h1>
     <h1>Address: <th:block th:text="${amenity.getAddress()}"></th:block></h1>
-    <h1>City: <th:block th:text="${city.getName()}"></th:block></h1>
+    <h1>City: <th:block th:text="${amenity.getCity() != null ? amenity.getCity() : '/' }"></th:block></h1>
+
 </div>
 </body>
 </html>
