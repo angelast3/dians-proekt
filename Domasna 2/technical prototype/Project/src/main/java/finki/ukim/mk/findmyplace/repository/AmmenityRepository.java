@@ -25,7 +25,7 @@ public class AmmenityRepository {
             String []barData = row.split(",");
             if ( flag > 0 ){
                 if (!barData[3].isEmpty())
-                    ammenityList.add(new Ammenity(barData[3], barData[3], Double.parseDouble(barData[1]), Double.parseDouble(barData[2]), "07" + String.format("%07d", random.nextInt(10000000)), "MK", barData.length >= 6 && !barData[6].equals("") ? barData[6] : null, "Partizanska", "09:00-01:00", "", 1));
+                    ammenityList.add(new Ammenity(barData[3], barData[3], Double.parseDouble(barData[1]), Double.parseDouble(barData[2]), "07" + String.format("%07d", random.nextInt(10000000)), "MK", barData.length >= 6 && !barData[6].equals("") ? barData[6] : null, barData.length >= 6 && !barData[7].equals("") ? barData[7] : null, "09:00-01:00", "", 1));
             }
             flag++;
         }
@@ -35,7 +35,7 @@ public class AmmenityRepository {
             String []cafeData = row.split(",");
             if (flag > 0){
                 if(!cafeData[3].isEmpty())
-                    ammenityList.add(new Ammenity(cafeData[3], cafeData[3], Double.parseDouble(cafeData[1]), Double.parseDouble(cafeData[2]),"07" + String.format("%07d", random.nextInt(10000000)), "MK", cafeData.length >= 6 && !cafeData[6].equals("") ? cafeData[6] : null, "Partizanska", "09:00-01:00", "", 0));
+                    ammenityList.add(new Ammenity(cafeData[3], cafeData[3], Double.parseDouble(cafeData[1]), Double.parseDouble(cafeData[2]),"07" + String.format("%07d", random.nextInt(10000000)), "MK", cafeData.length >= 6 && !cafeData[6].equals("") ? cafeData[6] : null, cafeData.length >= 6 && !cafeData[7].equals("") ? cafeData[7] : null, "09:00-01:00", "", 0));
             }
             flag++;
         }

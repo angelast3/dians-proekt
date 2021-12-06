@@ -1,10 +1,10 @@
 @id,@lon,@lat,name:en,name,addr:country,addr:city:en,addr:street:en,opening_hours,phone,website
 445893304,21.4138028,41.9947703,Nola Bar,нола Бар,MK,Skopje,Mitroplit Teodosij Gologanov,Mo-Fr 09:00-24:00; Sa Su 00:00-01:00 09:00-24:00,+389 2 2444542,http://hotelimakedonija.com.mk/en/Restaurant/1073/In-Vino-Restaurant
-459668824,21.4345059,41.9951019,,,MK,Bitola,,,,
+459668824,21.4345059,41.9951019,,,MK,,,,,
 461659998,22.6389577,41.4389263,,Gala Live,,,,,,
 478041016,22.0143629,41.4332378,,Kaj Roka,,,,,,
 529806829,22.0116649,41.4348833,,Energi's,,,,,,
-1562023466,21.4358564,41.9993401,Menada,Hürrem,,Bitola,,,,
+1562023466,21.4358564,41.9993401,Menada,Hürrem,,Bitola,Bulevar Ilindenska,,,
 1762411015,21.7197998,42.1345864,,Revolution,,,,,,
 1851476158,21.446918,41.991008,,Club Colloseum,,,,,,
 1858969938,21.4295352,41.9975241,,LA MER - Coffe & Wine bar,,,,Su-Th 08:00-24:00; Fr-Sa 09:00-01:00; ,,

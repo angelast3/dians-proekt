@@ -306,7 +306,7 @@
                     <div class="col-md-6">
                         <h1 class="fs-1 ms-1 mt-3">Name: <th:block th:text="${amenity.getName()}"></th:block></h1>
                         <h5>Phone number: <th:block th:text="${amenity.getPhoneNumber()}"></th:block></span> </h5>
-                        <h5>Address: <th:block th:text="${amenity.getAddress()}"></th:block></h5>
+                        <h5>Address: <th:block th:text="${amenity.getAddress() != null ? amenity.getAddress() : '/' }"></th:block></h5>
                         <h5>City: <th:block th:text="${amenity.getCity() != null ? amenity.getCity() : '/' }"></th:block></h5>
                     </div>
                     <div class="col-md-6">

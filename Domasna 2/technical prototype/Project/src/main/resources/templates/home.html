@@ -161,19 +161,18 @@
 <div class="filter-container ">
     <div class="select-filter">
         <select name="city" >
-            <option name="skopje" value="skopje">Skopje</option>
-            <option name="bitola" value="bitola">Bitola</option>
-            <option name="ohrid" value="ohrid">Ohrid</option>
+            <option th:name="all" th:value="all" th:text="All" selected></option>
+            <option th:each="c : ${cities}" th:name="${c.getName()}" th:value="${c.getName()}" th:text="${c.getName()}"></option>
         </select>
         <div class="amenity-type">
             <div class="radio-container">
-                <input type="radio" id="all" value="all"> <label for="all">All</label>
+                <input type="radio" id="all" value="all" name="amenityType"> <label for="all">All</label>
             </div>
             <div class="radio-container">
-                <input type="radio" id="bars" vale="bars"> <label for="bars">Bars</label>
+                <input type="radio" id="bars" vale="bars" name="amenityType"> <label for="bars">Bars</label>
             </div>
             <div class="radio-container">
-                <input type="radio" id="cafes" value="cafes"><label for="cafes">Cafes</label>
+                <input type="radio" id="cafes" value="cafes" name="amenityType"><label for="cafes">Cafes</label>
             </div>
         </div>
         <button type="button" class="btn btn-info filter-btn">Filter</button>
@@ -199,8 +198,8 @@
                                             <a th:href="@{/details/{id} (id=${amenity.getAmmenityID()})}" data-abc="true">
                                                 <th:block th:text="${amenity.getName()}"></th:block>
                                             </a></h6>
-                                        <p class="mb-3">Phone number: <th:block th:text="${amenity.getPhoneNumber()}"></th:block> </p>
-                                        <p class="mb-3">Address: <th:block th:text="${amenity.getAddress()}"></th:block> </p>
+                                        <p class="mb-3">Phone number: <th:block th:text="${amenity.getPhoneNumber() != null ? amenity.getPhoneNumber() : '/' }"></th:block> </p>
+                                        <p class="mb-3">Address: <th:block th:text="${amenity.getAddress() != null ? amenity.getAddress() : '/' }"></th:block> </p>
 
                                     </div>
                                     <div><a class="text-muted">Details...</a></div>
