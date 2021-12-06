@@ -11,8 +11,8 @@ import java.util.List;
 public class CityServiceImpl implements CityService {
     private final CityRepository cityRepository;
 
-    public CityServiceImpl() {
-        this.cityRepository = new CityRepository();
+    public CityServiceImpl(CityRepository cityRepository) {
+        this.cityRepository = cityRepository;
     }
 
     @Override
