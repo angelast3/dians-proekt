@@ -236,3 +236,6 @@ label.radio input:checked+span::after {
 .details-div{
     margin-top: 50px;
 }
+.product-image img{
+    width: 150px;
+}
