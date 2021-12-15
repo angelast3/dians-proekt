@@ -202,11 +202,11 @@
                                             <a th:href="@{/details/{id} (id=${amenity.getAmmenityID()})}" data-abc="true">
                                                 <th:block th:text="${amenity.getName()}"></th:block>
                                             </a></h6>
-                                        <p class="mb-3">Phone number: <th:block th:text="${amenity.getPhoneNumber() != null ? amenity.getPhoneNumber() : '/' }"></th:block> </p>
+                                        <p class="mb-3">City: <th:block th:text="${amenity.getCity() != null ? amenity.getCity() : '/' }"></th:block> </p>
                                         <p class="mb-3">Address: <th:block th:text="${amenity.getAddress() != null ? amenity.getAddress() : '/' }"></th:block> </p>
 
                                     </div>
-                                    <div><a class="text-muted">Details...</a></div>
+                                    <div><a th:href="@{/details/{id} (id=${amenity.getAmmenityID()})}" class="text-muted">Details...</a></div>
                                 </div>
                             </div>
                         </div>

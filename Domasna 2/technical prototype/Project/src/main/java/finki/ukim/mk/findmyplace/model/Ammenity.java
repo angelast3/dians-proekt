@@ -40,6 +40,9 @@ public class Ammenity {
         return type.name();
     }
 
+    public String getName() {
+        return name;
+    }
 }
 enum AmmenityType{
     Cafe(0),
