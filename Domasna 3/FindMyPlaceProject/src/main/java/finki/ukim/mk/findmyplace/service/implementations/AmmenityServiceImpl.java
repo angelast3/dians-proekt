@@ -38,4 +38,14 @@ public class AmmenityServiceImpl implements AmmenityService {
     public List<Ammenity> searchByCity(String city) {
         return this.ammenityRepository.listByCity(city);
     }
+
+    @Override
+    public List<Ammenity> searchByCityAndType(String city, String type) {
+        return this.ammenityRepository.listByCityAndType(city, type);
+    }
+
+    @Override
+    public List<Ammenity> searchByText(String text) {
+        return this.ammenityRepository.findByText(text);
+    }
 }

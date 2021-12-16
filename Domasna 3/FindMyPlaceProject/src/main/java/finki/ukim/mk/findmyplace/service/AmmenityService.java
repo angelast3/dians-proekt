@@ -11,4 +11,6 @@ public interface AmmenityService {
     Ammenity searchByName(String name);
     List<Ammenity> searchByType(String type);
     List<Ammenity> searchByCity(String city);
+    List<Ammenity> searchByCityAndType(String city, String type);
+    List<Ammenity> searchByText(String text);
 }

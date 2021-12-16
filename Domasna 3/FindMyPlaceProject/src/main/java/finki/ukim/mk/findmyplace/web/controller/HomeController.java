@@ -9,9 +9,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/home")
 public class HomeController {
 
     private final AmmenityService ammenityService;
@@ -23,9 +24,36 @@ public class HomeController {
     }
 
     @GetMapping
-    public String getHomePage(Model model){
-        model.addAttribute("amenities", ammenityService.showAll());
+    public String getHomePage(Model model, @RequestParam(required = false) String cityFilter, @RequestParam(required = false) String amenityType, @RequestParam(required = false) String search){
         model.addAttribute("cities", cityService.showAll());
+        if(cityFilter != null && !cityFilter.equals("") && amenityType != null && !amenityType.equals("")){
+            if(cityFilter.equals("All") && amenityType.equals("All")){
+                model.addAttribute("amenities", ammenityService.showAll());
+
+            }
+            else if(cityFilter.equals("All")){
+                model.addAttribute("amenities", ammenityService.searchByType(amenityType));
+            }
+            else if(amenityType.equals("All")){
+                model.addAttribute("amenities", ammenityService.searchByCity(cityFilter));
+
+            }
+            else
+                model.addAttribute("amenities", ammenityService.searchByCityAndType(cityFilter, amenityType));
+        }
+        else if(cityFilter != null && !cityFilter.equals(""))
+        {
+            model.addAttribute("amenities", ammenityService.searchByCity(cityFilter));
+        }
+        else if (amenityType != null && !amenityType.equals("")){
+            model.addAttribute("amenities", ammenityService.searchByType(amenityType));
+        }
+        else if(search != null && !search.equals("")){
+            model.addAttribute("amenities", ammenityService.searchByText(search));
+        }
+        else{
+            model.addAttribute("amenities", ammenityService.showAll());
+        }
         return "home";
     }
 

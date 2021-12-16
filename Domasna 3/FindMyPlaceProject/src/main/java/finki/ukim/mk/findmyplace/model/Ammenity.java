@@ -17,8 +17,8 @@ public class Ammenity {
     private String website;
     private AmmenityType type;
 
-    public Ammenity(String name, String nameEn, Double longitude, Double latitude, String phoneNumber, String country, String city, String address, String openingHours, String website, int typeID) {
-        this.ammenityID = (long)(Math.random() * 1000);
+    public Ammenity(String ammenityID,String name, String nameEn, Double longitude, Double latitude, String phoneNumber, String country, String city, String address, String openingHours, String website, int typeID) {
+        this.ammenityID = Long.valueOf(ammenityID);
         this.longitude = longitude;
         this.latitude = latitude;
         this.name = name;
