@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 @Repository
 public class AmmenityRepository {
-    public static List<Ammenity> ammenityList = new ArrayList<>();
+    public static List<Ammenity> ammenityList = new LinkedList<>();
 
     public AmmenityRepository() throws IOException {
         BufferedReader barCsvReader = new BufferedReader(new FileReader("src/main/java/finki/ukim/mk/findmyplace/repository/barDataset.csv"));

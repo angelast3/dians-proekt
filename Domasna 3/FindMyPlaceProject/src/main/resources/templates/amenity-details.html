@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Amenity detail</title>
-    <link rel="stylesheet" href="../static/details.css">
+<!--    <link rel="stylesheet" href="../static/details.css">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -117,7 +117,11 @@
             align-content: center;
             padding-top: 30px;
         }
+        #map{
+            height: 800px;
+        }
     </style>
+
 </head>
 <body>
 
@@ -156,13 +160,11 @@
             <div class=" px-3">
                 <div class="row">
                     <div class="col-md-8 info-container">
-                        <h1 class="fs-1 ms-1 mt-3"><th:block th:text="${amenity.getName()}"></th:block></h1>
+                        <h1 class="fs-1 ms-1 mt-3"><th:block th:text="${amenity.getName()}" id="aName"></th:block></h1>
                         <h5><strong>Phone number:</strong> <th:block th:text="${amenity.getPhoneNumber()}"></th:block></span> </h5>
                         <h5><strong>Address: </strong><th:block th:text="${amenity.getAddress() != null ? amenity.getAddress() : '/' }"></th:block></h5>
                         <h5><strong>City: </strong><th:block th:text="${amenity.getCity() != null ? amenity.getCity() : '/' }"></th:block></h5>
                         <h5 th:if="${amenity.getOpeningHours() != null}"><strong>Working hours:</strong> <th:block th:text="${amenity.getOpeningHours()}"></th:block> </h5>
-
-
                     </div>
                     <div class="col-md-4">
                         <div class="product-image">
@@ -175,10 +177,32 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-10">
+            <input type="hidden" th:value="${amenity.getLongitude()}" id="longitude">
+            <input type="hidden" th:value="${amenity.getLatitude()}" id="latitude">
+            <div id="map"> </div>
+        </div>
     </div>
-
-
-
 </div>
+<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+<script>
+    map = new OpenLayers.Map("map");
+    map.addLayer(new OpenLayers.Layer.OSM());
+
+    var lonLat = new OpenLayers.LonLat(document.getElementById('longitude').value, document.getElementById('latitude').value)
+        .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+        );
+
+    var zoom = 16;
+
+    var markers = new OpenLayers.Layer.Markers("Markers");
+    map.addLayer(markers);
+
+    markers.addMarker(new OpenLayers.Marker(lonLat));
+
+    map.setCenter(lonLat, zoom);
+</script>
 </body>
 </html>

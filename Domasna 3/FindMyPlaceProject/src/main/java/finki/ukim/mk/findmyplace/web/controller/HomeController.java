@@ -73,8 +73,5 @@ public class HomeController {
         return "amenity-details";
     }
 
-    @GetMapping("/contact-us")
-    public String contactUs(){
-        return "contactUs";
-    }
+
 }
