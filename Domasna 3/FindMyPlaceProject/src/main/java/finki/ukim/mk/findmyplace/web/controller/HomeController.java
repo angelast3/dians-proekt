@@ -41,19 +41,20 @@ public class HomeController {
                 model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByCity(cityFilter)));
 
             }
-            else
+            else{
                 model.addAttribute("amenities", ammenityService.searchByCityAndType(cityFilter, amenityType));
                 model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByCityAndType(cityFilter, amenityType)));
+            }
         }
-        else if(cityFilter != null && !cityFilter.equals(""))
-        {
-            model.addAttribute("amenities", ammenityService.searchByCity(cityFilter));
-            model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByCity(cityFilter)));
-        }
-        else if (amenityType != null && !amenityType.equals("")){
-            model.addAttribute("amenities", ammenityService.searchByType(amenityType));
-            model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByType(amenityType)));
-        }
+//        else if(cityFilter != null && !cityFilter.equals(""))
+//        {
+//            model.addAttribute("amenities", ammenityService.searchByCity(cityFilter));
+//            model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByCity(cityFilter)));
+//        }
+//        else if (amenityType != null && !amenityType.equals("")){
+//            model.addAttribute("amenities", ammenityService.searchByType(amenityType));
+//            model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByType(amenityType)));
+//        }
         else if(search != null && !search.equals("")){
             model.addAttribute("amenities", ammenityService.searchByText(search));
             model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByText(search)));

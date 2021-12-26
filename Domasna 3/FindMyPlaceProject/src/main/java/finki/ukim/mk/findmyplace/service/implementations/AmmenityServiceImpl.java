@@ -17,7 +17,9 @@ public class AmmenityServiceImpl implements AmmenityService {
     }
 
     @Override
-    public Ammenity findById(Long id){return this.ammenityRepository.findById(id).orElseThrow();}
+    public Ammenity findById(Long id) {
+        return this.ammenityRepository.findById(id).orElseThrow();
+    }
 
     @Override
     public List<Ammenity> showAll() {
@@ -52,8 +54,8 @@ public class AmmenityServiceImpl implements AmmenityService {
     @Override
     public List<Ammenity> searchMostVisited(List<Ammenity> ammenities) {
         Ammenity temp;
-        for(int k = 0; k < 5; k++){
-            for (int i = 0; i < ammenities.size()-1; i++) {
+        for (int k = 0; k < 5; k++) {
+            for (int i = 0; i < ammenities.size() - 1; i++) {
                 if (ammenities.get(i).compareTo(ammenities.get(i + 1)) > 0) {
                     temp = ammenities.get(i);
                     ammenities.set(i, ammenities.get(i + 1));
@@ -61,6 +63,9 @@ public class AmmenityServiceImpl implements AmmenityService {
                 }
             }
         }
-        return ammenities.subList(0,5);
+        if (ammenities.size() < 5)
+            return ammenities;
+        else
+            return ammenities.subList(0, 5);
     }
 }
