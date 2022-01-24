@@ -1,0 +1,1 @@
+insert into amenities (amenityID, longitude, latitude) values (0,21.4044920,41.9973251)
