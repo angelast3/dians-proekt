@@ -1,6 +1,8 @@
 package finki.ukim.mk.microservices.services;
 
+import finki.ukim.mk.microservices.services.amenity.AmenityServer;
 import finki.ukim.mk.microservices.services.registration.RegistrationServer;
+import finki.ukim.mk.microservices.services.web.WebServer;
 
 import java.net.InetAddress;
 
@@ -51,25 +53,30 @@ public class Main {
             e.printStackTrace();
         }
 
-        if (serverName.equals("registration") || serverName.equals("reg")) {
-            RegistrationServer.main(args);
+        switch (serverName) {
+            case "registration":
+            case "reg":
+                RegistrationServer.main(args);
+                break;
+            case "amenity":
+                AmenityServer.main(args);
+                break;
+            case "web":
+                WebServer.main(args);
+                break;
+            default:
+                // Unrecognized server type - print usage and exit
+                System.out.println("Unknown server type: " + serverName);
+                usage();
+                break;
         }
-//        } else if (serverName.equals("accounts")) {
-//            AccountsServer.main(args);
-//        } else if (serverName.equals("web")) {
-//            WebServer.main(args);
-//        } else {
-//            // Unrecognized server type - print usage and exit
-//            System.out.println("Unknown server type: " + serverName);
-//            usage();
-//        }
     }
 
     protected static void usage() {
         System.out.println();
         System.out.println("Usage: java -jar ... <server-name> [server-port]");
         System.out.println("     where");
-        System.out.println("       server-name is 'reg', 'registration', " + "'accounts' or 'web'");
+        System.out.println("       server-name is 'reg', 'registration', " + "'amenity' or 'web'");
         System.out.println("       server-port > 1024");
         System.out.println(
                 "     optionally specify --registration.server.hostname=<IP-address> if it is not running on localhost,");
