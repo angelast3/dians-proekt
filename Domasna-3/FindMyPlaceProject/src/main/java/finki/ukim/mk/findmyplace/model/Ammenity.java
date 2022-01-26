@@ -59,14 +59,3 @@ public class Ammenity {
         return name;
     }
 }
-enum AmmenityType{
-    Cafe(0),
-    Bar(1);
-    private final int id;
-    int getId(){
-        return id;
-    }
-    AmmenityType(int id){
-        this.id = id;
-    }
-}
