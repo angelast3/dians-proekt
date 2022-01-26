@@ -2,7 +2,6 @@ package finki.ukim.mk.microservices.services;
 
 import finki.ukim.mk.microservices.services.amenity.AmenityServer;
 import finki.ukim.mk.microservices.services.registration.RegistrationServer;
-import finki.ukim.mk.microservices.services.web.WebServer;
 
 import java.net.InetAddress;
 
@@ -61,9 +60,6 @@ public class Main {
             case "amenity":
                 AmenityServer.main(args);
                 break;
-            case "web":
-                WebServer.main(args);
-                break;
             default:
                 // Unrecognized server type - print usage and exit
                 System.out.println("Unknown server type: " + serverName);
@@ -76,7 +72,7 @@ public class Main {
         System.out.println();
         System.out.println("Usage: java -jar ... <server-name> [server-port]");
         System.out.println("     where");
-        System.out.println("       server-name is 'reg', 'registration', " + "'amenity' or 'web'");
+        System.out.println("       server-name is 'reg', 'registration' or 'amenity'");
         System.out.println("       server-port > 1024");
         System.out.println(
                 "     optionally specify --registration.server.hostname=<IP-address> if it is not running on localhost,");
