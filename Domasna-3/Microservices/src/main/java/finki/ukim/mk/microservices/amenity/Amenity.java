@@ -19,7 +19,7 @@ public class Amenity {
     private String openingHours;
     private String website;
     private AmenityType type;
-//    private int visits;
+    private int visits;
 
     public Amenity(String amenityID,String name, String nameEn, Double longitude, Double latitude, String phoneNumber, String country, String city, String address, String openingHours, String website, int typeID) {
         this.amenityID = Long.valueOf(amenityID);
@@ -92,9 +92,9 @@ public class Amenity {
         this.type = type;
     }
 
-//    public void setVisits(int visits) {
-//        this.visits = visits;
-//    }
+    public void setVisits(int visits) {
+        this.visits = visits;
+    }
 
     public Long getAmenityID() {
         return amenityID;
@@ -144,23 +144,23 @@ public class Amenity {
         return type;
     }
 
-//    public int getVisits() {
-//        return visits;
-//    }
-//
-//    public void incrementVisits(){
-//        visits++;
-//    }
-//    public int compareTo(Amenity element) {
-//        int res = 0;
-//        if (this.visits < element.getVisits()) {
-//            res = 1;
-//        }
-//        if (this.visits > element.getVisits()) {
-//            res =- 1;
-//        }
-//        return res;
-//    }
+    public int getVisits() {
+        return visits;
+    }
+
+    public void incrementVisits(){
+        visits++;
+    }
+    public int compareTo(Amenity element) {
+        int res = 0;
+        if (this.visits < element.getVisits()) {
+            res = 1;
+        }
+        if (this.visits > element.getVisits()) {
+            res =- 1;
+        }
+        return res;
+    }
 
 }
 enum AmenityType{

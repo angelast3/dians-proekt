@@ -1,3 +1,4 @@
+-- TODO: ADD MORE DATA WITH ADDRESSES, PHONE NUMBERS AND OPENING HOURS
 insert into amenities (amenityID, longitude, latitude, name, city, type) values (445893304,21.4138028,41.9947703, 'Nola Bar', 'Skopje', 1);
 insert into amenities (amenityID, longitude, latitude, name, city, type) values (461659998,22.6389577,41.4389263, 'Gala Live', 'Skopje', 1);
 insert into amenities (amenityID, longitude, latitude, name, city, type) values (1562023466,21.4358564,41.9993401, 'Menada', 'Bitola', 1);

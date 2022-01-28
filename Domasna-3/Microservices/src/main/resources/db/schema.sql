@@ -13,4 +13,5 @@ create table amenities (
     country VARCHAR(255),
     city VARCHAR(255),
     type INT,
+    visits INT DEFAULT 0,
 );

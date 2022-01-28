@@ -34,28 +34,29 @@ public class HomeController {
     public String getHomePage(Model model, @RequestParam(required = false) String cityFilter, @RequestParam(required = false) String amenityType, @RequestParam(required = false) String search){
         model.addAttribute("cities", cityService.showAll());
 
-        // getting plain json with amenities
+        // getting amenity dtos
         AmenityDto[] amenities = null;
-
-        amenities = restTemplate.getForObject(this.url + "/amenities", AmenityDto[].class);
 
         if(cityFilter != null && !cityFilter.equals("") && amenityType != null && !amenityType.equals("")){
             if(cityFilter.equals("All") && amenityType.equals("All")){
-                model.addAttribute("amenities", ammenityService.showAll());
+                amenities = restTemplate.getForObject(this.url + "/amenities", AmenityDto[].class);
+                model.addAttribute("amenities", amenities);
                 model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.showAll()));
-
             }
             else if(cityFilter.equals("All")){
-                model.addAttribute("amenities", ammenityService.searchByType(amenityType));
+                amenities = restTemplate.getForObject(this.url + "/amenities/type/{type}", AmenityDto[].class, amenityType);
+                model.addAttribute("amenities", amenities);
                 model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByType(amenityType)));
             }
             else if(amenityType.equals("All")){
-                model.addAttribute("amenities", ammenityService.searchByCity(cityFilter));
+                amenities = restTemplate.getForObject(this.url + "/amenities/city/{city}", AmenityDto[].class, cityFilter);
+                model.addAttribute("amenities", amenities);
                 model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByCity(cityFilter)));
 
             }
             else{
-                model.addAttribute("amenities", ammenityService.searchByCityAndType(cityFilter, amenityType));
+                amenities = restTemplate.getForObject(this.url + "/amenities/city/{city}/type/{type}", AmenityDto[].class, cityFilter, amenityType);
+                model.addAttribute("amenities", amenities);
                 model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByCityAndType(cityFilter, amenityType)));
             }
         }
@@ -69,11 +70,13 @@ public class HomeController {
 //            model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByType(amenityType)));
 //        }
         else if(search != null && !search.equals("")){
-            model.addAttribute("amenities", ammenityService.searchByText(search));
+            AmenityDto amenity = restTemplate.getForObject(this.url + "/amenity/name/{name}", AmenityDto.class, search);
+            model.addAttribute("amenities", amenity);
             model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByText(search)));
         }
         else{
-            model.addAttribute("amenities", ammenityService.showAll());
+            amenities = restTemplate.getForObject(this.url + "/amenities", AmenityDto[].class);
+            model.addAttribute("amenities", amenities);
             model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.showAll()));
         }
         return "home";
@@ -81,11 +84,10 @@ public class HomeController {
 
     @GetMapping("/details/{id}")
     public String getAmenityDetails(@PathVariable Long id, Model model){
-        Ammenity amenity = ammenityService.findById(id);
-        amenity.incrementVisits();
-        model.addAttribute("amenity", amenity);
+        AmenityDto amenityDto = restTemplate.getForObject(this.url + "/amenity/{id}", AmenityDto.class, id);
+        // amenity.incrementVisits();
+        model.addAttribute("amenity", amenityDto);
         return "amenity-details";
     }
-
 
 }
