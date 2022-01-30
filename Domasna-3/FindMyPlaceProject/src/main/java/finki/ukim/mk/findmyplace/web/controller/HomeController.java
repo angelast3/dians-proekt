@@ -70,8 +70,8 @@ public class HomeController {
 //            model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByType(amenityType)));
 //        }
         else if(search != null && !search.equals("")){
-            AmenityDto amenity = restTemplate.getForObject(this.url + "/amenity/name/{name}", AmenityDto.class, search);
-            model.addAttribute("amenities", amenity);
+            amenities = restTemplate.getForObject(this.url + "/amenity/name/{name}", AmenityDto[].class, search);
+            model.addAttribute("amenities", amenities);
             model.addAttribute("mostVisited", ammenityService.searchMostVisited(ammenityService.searchByText(search)));
         }
         else{

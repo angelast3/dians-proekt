@@ -1,4 +1,4 @@
-package finki.ukim.mk.microservices.amenity;
+package finki.ukim.mk.microservices.amenity.model;
 
 import javax.persistence.*;
 
@@ -44,76 +44,12 @@ public class Amenity {
 
     }
 
-    public void setAmenityID(Long amenityID) {
-        this.amenityID = amenityID;
-    }
-
-    public void setLongitude(Double longitude) {
-        this.longitude = longitude;
-    }
-
-    public void setLatitude(Double latitude) {
-        this.latitude = latitude;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setNameEn(String nameEn) {
-        this.nameEn = nameEn;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setOpeningHours(String openingHours) {
-        this.openingHours = openingHours;
-    }
-
-    public void setWebsite(String website) {
-        this.website = website;
-    }
-
-    public void setType(AmenityType type) {
-        this.type = type;
-    }
-
-    public void setVisits(int visits) {
-        this.visits = visits;
-    }
-
-    public Long getAmenityID() {
-        return amenityID;
-    }
-
     public Double getLongitude() {
         return longitude;
     }
 
     public Double getLatitude() {
         return latitude;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getNameEn() {
-        return nameEn;
     }
 
     public String getPhoneNumber() {
@@ -124,20 +60,28 @@ public class Amenity {
         return country;
     }
 
-    public String getCity() {
-        return city;
-    }
-
     public String getAddress() {
         return address;
     }
 
-    public String getOpeningHours() {
-        return openingHours;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getWebsite() {
-        return website;
+    public void setType(AmenityType type) {
+        this.type = type;
+    }
+
+    public Long getAmenityID() {
+        return amenityID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCity() {
+        return city;
     }
 
     public AmenityType getType() {
@@ -148,9 +92,11 @@ public class Amenity {
         return visits;
     }
 
+
     public void incrementVisits(){
         visits++;
     }
+
     public int compareTo(Amenity element) {
         int res = 0;
         if (this.visits < element.getVisits()) {
@@ -163,14 +109,4 @@ public class Amenity {
     }
 
 }
-enum AmenityType{
-    Cafe(0),
-    Bar(1);
-    private final int id;
-    int getId(){
-        return id;
-    }
-    AmenityType(int id){
-        this.id = id;
-    }
-}
+

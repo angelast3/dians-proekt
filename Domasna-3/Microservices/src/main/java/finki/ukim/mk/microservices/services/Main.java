@@ -2,9 +2,11 @@ package finki.ukim.mk.microservices.services;
 
 import finki.ukim.mk.microservices.services.amenity.AmenityServer;
 import finki.ukim.mk.microservices.services.registration.RegistrationServer;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.net.InetAddress;
 
+@SpringBootApplication
 public class Main {
 
     public static final String NO_VALUE = "NO-VALUE";

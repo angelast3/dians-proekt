@@ -1,5 +1,7 @@
 package finki.ukim.mk.microservices.amenity;
 
+import finki.ukim.mk.microservices.amenity.model.Amenity;
+import finki.ukim.mk.microservices.amenity.services.AmenityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,41 +12,41 @@ import java.util.List;
 @RestController
 public class AmenityController {
 
-    protected AmenityRepository amenityRepository;
+    private final AmenityService amenityService;
 
     @Autowired
-    public AmenityController(AmenityRepository amenityRepository){
-        this.amenityRepository = amenityRepository;
+    public AmenityController(AmenityService amenityService){
+        this.amenityService = amenityService;
     }
 
     @RequestMapping("/amenities")
     public List<Amenity> getAllAmenities() {
-        return amenityRepository.findAll();
+        return this.amenityService.showAll();
     }
 
     @RequestMapping("/amenity/{id}")
     public Amenity getAmenity(@PathVariable Long id){
-        return amenityRepository.findById(id).orElseThrow(RuntimeException::new);
+        return amenityService.findById(id);
     }
 
     @RequestMapping("/amenities/type/{type}")
     public List<Amenity> getAmenitiesByType(@PathVariable String type){
-        return amenityRepository.findAmenitiesByType(AmenityType.valueOf(type));
+        return amenityService.searchByType(type);
     }
 
     @RequestMapping("/amenities/city/{city}")
     public List<Amenity> getAmenitiesByCity(@PathVariable String city){
-        return amenityRepository.findAmenitiesByCity(city);
+        return amenityService.searchByCity(city);
     }
 
     @RequestMapping("/amenities/city/{city}/type/{type}")
     public List<Amenity> getAmenitiesByCityAndType(@PathVariable String city, @PathVariable String type){
-        return amenityRepository.findAmenitiesByCityAndType(city, AmenityType.valueOf(type));
+        return this.amenityService.searchByCityAndType(city, type);
     }
 
     @RequestMapping("/amenity/name/{name}")
-    public Amenity getAmenityByName(@PathVariable String name){
-        return amenityRepository.findAmenityByName(name);
+    public List<Amenity> getAmenityByName(@PathVariable String name){
+        return this.amenityService.searchByName(name);
     }
 
 }

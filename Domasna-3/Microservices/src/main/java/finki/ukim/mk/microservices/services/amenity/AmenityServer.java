@@ -1,9 +1,7 @@
 package finki.ukim.mk.microservices.services.amenity;
 
 import finki.ukim.mk.microservices.amenity.AmenityConfiguration;
-import finki.ukim.mk.microservices.amenity.AmenityRepository;
 import finki.ukim.mk.microservices.services.registration.RegistrationServer;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -16,8 +14,8 @@ import java.util.logging.Logger;
 @Import(AmenityConfiguration.class)
 public class AmenityServer {
 
-    @Autowired
-    protected AmenityRepository amenityRepository;
+//    @Autowired
+//    protected AmenityRepository amenityRepository;
 
     protected Logger logger = Logger.getLogger(AmenityServer.class.getName());
 
