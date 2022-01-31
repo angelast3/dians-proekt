@@ -67,4 +67,9 @@ public class AmenityServiceImpl implements AmenityService {
             return amenities.subList(0, 5);
     }
 
+    @Override
+    public void incrementVisited(Long id) {
+        this.amenityCsvRepository.findById(id).get().incrementVisits();
+    }
+
 }

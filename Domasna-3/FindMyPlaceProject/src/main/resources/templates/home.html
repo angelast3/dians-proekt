@@ -308,7 +308,7 @@
                 <ul class="">
                     <li class="" th:each="mostVisitedAmenitie : ${mostVisited}">
                         <h5>
-                            <a th:href="@{home/details/{id} (id=${mostVisitedAmenitie.getAmmenityID()})}">
+                            <a th:href="@{home/details/{id} (id=${mostVisitedAmenitie.getAmenityID()})}">
                                 <th:block th:text="${mostVisitedAmenitie.getName()}"></th:block>
                             </a></h5>
                         <!--                            <h6 class="media-title ">-->

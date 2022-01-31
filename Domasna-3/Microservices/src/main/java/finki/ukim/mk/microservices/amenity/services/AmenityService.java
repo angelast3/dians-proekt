@@ -11,5 +11,6 @@ public interface AmenityService {
     List<Amenity> searchByCity(String city);
     List<Amenity> searchByCityAndType(String city, String type);
     List<Amenity> searchMostVisited(List<Amenity> ammenities);
+    void incrementVisited(Long id);
 
 }
