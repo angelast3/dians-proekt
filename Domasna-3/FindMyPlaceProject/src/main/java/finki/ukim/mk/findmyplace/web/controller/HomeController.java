@@ -26,9 +26,9 @@ public class HomeController {
     @GetMapping
     public String getHomePage(Model model, @RequestParam(required = false) String cityFilter, @RequestParam(required = false) String amenityType, @RequestParam(required = false) String search){
         // getting amenity dtos
-        AmenityDto[] amenities = null;
-        AmenityDto[] mostVisitedAmenities = null;
-        CityDto[] cities = null;
+        AmenityDto[] amenities;
+        AmenityDto[] mostVisitedAmenities;
+        CityDto[] cities;
         cities = restTemplate.getForObject(this.url + "/cities", CityDto[].class);
         model.addAttribute("cities", cities);
 

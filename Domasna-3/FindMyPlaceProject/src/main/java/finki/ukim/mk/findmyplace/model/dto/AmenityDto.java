@@ -1,6 +1,6 @@
 package finki.ukim.mk.findmyplace.model.dto;
 
-import finki.ukim.mk.findmyplace.model.AmmenityType;
+import finki.ukim.mk.findmyplace.model.AmenityType;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -15,7 +15,7 @@ public class AmenityDto implements Serializable {
     private Double latitude;
     private String name;
     private String city;
-    private AmmenityType type;
+    private AmenityType type;
     private int visits;
 
     public String getType() {
