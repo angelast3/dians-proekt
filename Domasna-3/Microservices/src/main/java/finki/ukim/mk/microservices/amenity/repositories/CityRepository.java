@@ -11,16 +11,15 @@ import java.util.concurrent.atomic.AtomicBoolean;
 @Repository
 public class CityRepository {
     public static List<City> cityList = new ArrayList<>();
-    private final AmenityCsvRepository amenityRepository;
+
 
     public CityRepository(AmenityCsvRepository amenityRepository) {
-        this.amenityRepository = amenityRepository;
-        amenityRepository.listAll().stream()
+        amenityRepository.listAll()
                 .forEach(x->{
                     if(x.getCity() != null){
                         AtomicBoolean flag = new AtomicBoolean(true);
                         if(!cityList.isEmpty()){
-                            cityList.stream().forEach(el -> {
+                            cityList.forEach(el -> {
                                 if (el.getName().equals(x.getCity())) {
                                     flag.set(false);
                                 }

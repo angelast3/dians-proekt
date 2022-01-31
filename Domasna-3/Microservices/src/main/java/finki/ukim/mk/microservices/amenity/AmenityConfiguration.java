@@ -13,8 +13,6 @@ import java.util.logging.Logger;
 @Configuration
 @ComponentScan
 @EntityScan("finki.ukim.mk.microservices.amenity.model")
-@EnableJpaRepositories("finki.ukim.mk.microservices.amenity.repositories")
-@PropertySource("classpath:db-config.properties")
 public class AmenityConfiguration {
 
     protected Logger logger;
@@ -23,17 +21,4 @@ public class AmenityConfiguration {
         logger = Logger.getLogger(getClass().getName());
     }
 
-    @Bean
-    public DataSource dataSource() {
-        logger.info("dataSource() invoked");
-
-        // Create an in-memory H2 relational database containing some amenities
-        DataSource dataSource = (new EmbeddedDatabaseBuilder()).addScript("classpath:db/schema.sql")
-                .addScript("classpath:db/data.sql").build();
-
-
-        logger.info("dataSource = " + dataSource);
-
-        return dataSource;
-    }
 }
