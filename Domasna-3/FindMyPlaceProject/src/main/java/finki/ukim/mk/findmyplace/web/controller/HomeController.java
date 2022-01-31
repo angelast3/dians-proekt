@@ -31,7 +31,6 @@ public class HomeController {
         CityDto[] cities;
         cities = restTemplate.getForObject(this.url + "/cities", CityDto[].class);
         model.addAttribute("cities", cities);
-
         if(cityFilter != null && !cityFilter.equals("") && amenityType != null && !amenityType.equals("")){
             if(cityFilter.equals("All") && amenityType.equals("All")){
                 amenities = restTemplate.getForObject(this.url + "/amenities", AmenityDto[].class);
@@ -71,14 +70,17 @@ public class HomeController {
             model.addAttribute("amenities", amenities);
             model.addAttribute("mostVisited", mostVisitedAmenities);
         }
-        return "home";
+        model.addAttribute("bodyContent", "home");
+
+        return "master-template";
     }
 
     @GetMapping("/details/{id}")
     public String getAmenityDetails(@PathVariable Long id, Model model){
         AmenityDto amenityDto = restTemplate.getForObject(this.url + "/amenity/{id}", AmenityDto.class, id);
         model.addAttribute("amenity", amenityDto);
-        return "amenity-details";
+        model.addAttribute("bodyContent", "amenity-details");
+        return "master-template";
     }
 
 }

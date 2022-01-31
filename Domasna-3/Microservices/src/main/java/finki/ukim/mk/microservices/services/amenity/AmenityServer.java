@@ -14,9 +14,6 @@ import java.util.logging.Logger;
 @Import(AmenityConfiguration.class)
 public class AmenityServer {
 
-//    @Autowired
-//    protected AmenityRepository amenityRepository;
-
     protected Logger logger = Logger.getLogger(AmenityServer.class.getName());
 
     public static void main(String[] args) {
